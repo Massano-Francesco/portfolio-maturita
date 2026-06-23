@@ -21,7 +21,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          BASE_PATH: '/Portfolio_digitale'  # ← cambia con il nome del tuo repo
+          BASE_PATH: '/portfolio-maturita'  # ← cambia con il nome del tuo repo
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
