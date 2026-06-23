@@ -980,7 +980,13 @@
     flex-direction: column;
     position: relative;
     animation: slideUp 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border-color: rgba(34, 211, 238, 0.2);
+    /* sfondo PIENO e opaco → netto contrasto col contenuto */
+    background: #0b0f1a !important;
+    border: 1px solid rgba(34, 211, 238, 0.4) !important;
+    border-radius: 18px;
+    box-shadow:
+      0 30px 90px rgba(0, 0, 0, 0.7),
+      0 0 60px rgba(34, 211, 238, 0.1);
   }
 
   @keyframes slideUp {
@@ -1110,11 +1116,12 @@
   .modal-title {
     font-size: 1.65rem;
     line-height: 1.25;
+    color: #f1f5f9 !important;
   }
 
   .modal-desc {
     font-size: 0.92rem;
-    color: var(--text-secondary);
+    color: #cbd5e1 !important;
     line-height: 1.75;
   }
 
@@ -1124,8 +1131,8 @@
     flex-direction: column;
     gap: 10px;
     padding: 18px 20px;
-    background: rgba(34, 211, 238, 0.04);
-    border: 1px solid var(--border-subtle);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--radius-sm);
   }
 
@@ -1134,7 +1141,7 @@
     align-items: flex-start;
     gap: 12px;
     font-size: 0.88rem;
-    color: var(--text-secondary);
+    color: #e2e8f0 !important;
     line-height: 1.5;
   }
 
@@ -1151,6 +1158,45 @@
     gap: 14px;
     flex-wrap: wrap;
     padding-top: 4px;
+  }
+
+  /* Pulsanti del modal ben visibili sullo sfondo scuro */
+  .modal-actions .btn-solid,
+  .modal-actions .btn-glow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 100px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .modal-actions .btn-solid {
+    background: #22d3ee !important;
+    color: #04121a !important;
+    border: 1px solid #22d3ee !important;
+  }
+  .modal-actions .btn-solid:hover {
+    background: #67e8f9 !important;
+    border-color: #67e8f9 !important;
+    transform: translateY(-2px);
+  }
+
+  .modal-actions .btn-glow {
+    background: rgba(34, 211, 238, 0.14) !important;
+    color: #67e8f9 !important;
+    border: 1px solid rgba(34, 211, 238, 0.6) !important;
+  }
+  .modal-actions .btn-glow:hover {
+    background: rgba(34, 211, 238, 0.24) !important;
+    border-color: #22d3ee !important;
+    transform: translateY(-2px);
   }
 
   @media (max-width: 1100px) {

@@ -1,224 +1,134 @@
 <script>
   import { base } from '$app/paths';
-  import AnimatedBackground from '$lib/components/AnimatedBackground.svelte';
-
-  const infoItems = [
-    { label: 'Scuola', value: 'Istituto Tecnico Edoardo Agnelli' },
-    { label: 'Indirizzo', value: 'Informatica e Telecomunicazioni' },
-    { label: 'Anno', value: '2025/2026' },
-    { label: 'Classe', value: '5° ITT' },
-  ];
-
-  const skills = ['C', 'Python', 'Pygame', 'Tkinter', 'Reti', 'Database', 'Linux'];
 </script>
 
 <svelte:head>
-  <title>Chi Sono — Francesco Edoardo Massano</title>
+  <title>Chi sono — Francesco Edoardo Massano</title>
+  <meta
+    name="description"
+    content="Chi è Francesco Edoardo Massano: il percorso dalla terza alla quinta in Informatica e Telecomunicazioni, le competenze e gli interessi." />
 </svelte:head>
 
-<!-- Hero -->
-<section class="page-hero">
-  <AnimatedBackground />
-  <div class="hero-inner container">
-    <div class="section-label reveal">01 / Chi Sono</div>
-    <h1 class="reveal">
-      Presentazione<br/>
-      <span class="gradient-text">Personale</span>
+<!-- ─────────────────────── ABOUT HERO ─────────────────────── -->
+<section class="about-hero section--tight">
+  <div class="container">
+    <span class="eyebrow rise" style="--d:.05s">Chi sono</span>
+    <h1 class="about-hero__title rise" style="--d:.16s">
+      Costruisco cose che prima non c'erano<span class="dot">.</span>
     </h1>
-    <p class="hero-sub reveal">Una finestra sul mio percorso, sulle mie passioni e su dove voglio arrivare.</p>
+    <p class="lead about-hero__lead rise" style="--d:.32s">
+      Mi chiamo Francesco Edoardo Massano. Sto concludendo cinque anni di Informatica e
+      Telecomunicazioni all'Istituto Edoardo Agnelli di Torino, e questo portfolio è il modo
+      in cui ho scelto di raccontarmi: <em>con i fatti, non con le parole di circostanza.</em>
+    </p>
   </div>
 </section>
 
-<!-- Main content -->
+<hr class="rule" style="max-width:var(--maxw);margin-inline:auto" />
+
+<!-- ─────────────────────── NARRATIVE ─────────────────────── -->
 <section class="section">
   <div class="container">
-    <div class="info-strip reveal">
-      {#each infoItems as item}
-        <div class="info-pill glass-card">
-          <span class="info-label mono">{item.label}</span>
-          <span class="info-value">{item.value}</span>
-        </div>
-      {/each}
-    </div>
-
-    <div class="profile-content">
-      <div class="profile-text">
-        <div class="section-label reveal">Descrizione</div>
-        <h2 class="reveal">Ciao, sono<br/><span class="glow-text">Francesco Edoardo Massano</span></h2>
-
-        <p class="bio reveal">
-          Sono Francesco Edoardo Massano, studente del quinto anno all'Istituto Tecnico Edoardo Agnelli
-          nell'indirizzo Informatica e Telecomunicazioni.
-
-          Ho sempre trovato nell'informatica qualcosa di più di una materia scolastica: un modo di pensare,
-          di risolvere problemi, di dare forma alle idee. Nel corso degli anni ho approfondito la programmazione,
-          le reti, i sistemi operativi, la cybersecurity e i database, costruendo passo dopo passo
-          una visione più completa del mondo digitale.
-
-          Questo portfolio è la mia storia raccontata attraverso i progetti e le esperienze vissute:
-          non solo quello che ho imparato, ma come mi ha cambiato. Ogni lavoro qui presente è un tassello
-          di un percorso fatto di curiosità, tentativi e soddisfazioni.
-
-          La tecnologia per me è uno strumento creativo: trasforma idee astratte in qualcosa di concreto
-          e funzionante. È questo che mi spinge a continuare a imparare e a mettermi in gioco.
-        </p>
-
-        <p class="bio reveal">
-          In questi tre anni ho capito che programmare non significa solo scrivere codice: significa
-          ragionare con metodo, affrontare l'errore come parte del processo e trovare soluzioni
-          eleganti a problemi reali. Il mio obiettivo è crescere nel settore tech, esplorare nuovi
-          linguaggi e paradigmi, e contribuire a progetti che abbiano un impatto concreto.
+    <div class="editorial reveal">
+      <div class="editorial__label">Il punto di partenza</div>
+      <div class="prose">
+        <p>
+          Mi sono avvicinato alla programmazione quasi per caso, e ci sono rimasto per una
+          ragione semplice: mi piace la sensazione di trasformare un'idea in qualcosa che
+          funziona. Da lì è venuto naturale interessarmi a tutto il resto — come si tengono
+          in piedi le <strong>reti</strong>, come comunicano i <strong>sistemi</strong>, come
+          si progetta qualcosa pensando davvero a chi dovrà usarlo.
         </p>
       </div>
+    </div>
 
-      <aside class="profile-aside reveal-right">
-        <div class="skills-card glass-card">
-          <span class="mono skills-title">Competenze</span>
-          <div class="skills-tags">
-            {#each skills as skill}
-              <span class="skill-tag">{skill}</span>
-            {/each}
+    <div class="editorial reveal">
+      <div class="editorial__label">Il percorso</div>
+      <div class="path">
+        <div class="path__item">
+          <div class="path__rail"><span class="path__dot"></span><span class="path__stem"></span></div>
+          <div>
+            <div class="path__year">Terza · le fondamenta</div>
+            <div class="path__h">Imparare a pensare in codice</div>
+            <p class="path__d">
+              I primi linguaggi, la logica, gli algoritmi. Il momento in cui un programma
+              gira per la prima volta e capisci che puoi costruire qualunque cosa.
+            </p>
           </div>
         </div>
 
-        <div class="quote-card glass-card">
-          <span class="mono quote-label">// motivazione</span>
-          <p class="quote-text">"Il codice è poesia che la macchina può eseguire."</p>
+        <div class="path__item">
+          <div class="path__rail"><span class="path__dot"></span><span class="path__stem"></span></div>
+          <div>
+            <div class="path__year">Quarta · la struttura</div>
+            <div class="path__h">Reti, sistemi e progetti veri</div>
+            <p class="path__d">
+              Dal singolo programma all'architettura: reti, database, sistemi che dialogano.
+              Progetti più ambiziosi, lavoro in gruppo e i primi problemi senza soluzione
+              pronta sul libro.
+            </p>
+          </div>
         </div>
-      </aside>
+
+        <div class="path__item">
+          <div class="path__rail"><span class="path__dot"></span><span class="path__stem"></span></div>
+          <div>
+            <div class="path__year">Quinta · la sintesi</div>
+            <div class="path__h">Mettere tutto insieme</div>
+            <p class="path__d">
+              L'anno in cui i pezzi si uniscono: l'Esame di Stato, questo portfolio e i
+              primi passi oltre la scuola, con uno sguardo già rivolto a quello che viene dopo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="editorial reveal">
+      <div class="editorial__label">Competenze</div>
+      <div>
+        <div class="skills__group">
+          <div class="skills__h">Sviluppo &amp; programmazione</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML &amp; CSS</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <div class="skills__h">Reti &amp; sistemi</div>
+          <div class="tags">
+            <span class="tag">Subnetting / VLSM</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">Routing</span>
+            <span class="tag">Firewall &amp; DMZ</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+        <div class="skills__group">
+          <div class="skills__h">Strumenti &amp; metodo</div>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">API REST</span>
+            <span class="tag">Database relazionali</span>
+            <span class="tag">Progettazione UI</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<style>
-  .page-hero {
-    position: relative;
-    min-height: 50vh;
-    display: flex;
-    align-items: flex-end;
-    padding: calc(var(--navbar-h,72px) + 60px) 0 80px;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border-subtle);
-  }
-
-  .hero-inner h1 { font-size: clamp(3rem, 7vw, 6rem); margin-bottom: 16px; }
-  .hero-sub { font-size: 1.05rem; color: var(--text-secondary); max-width: 500px; }
-
-  .info-strip {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 64px;
-  }
-
-  .info-pill {
-    padding: 18px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    transition: all 0.3s ease;
-  }
-
-  .info-pill:hover {
-    border-color: var(--border-glow);
-    transform: translateY(-3px);
-  }
-
-  .info-label {
-    font-size: 0.65rem;
-    color: var(--accent-cyan);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-  }
-
-  .info-value {
-    font-size: 0.88rem;
-    color: var(--text-primary);
-    font-weight: 500;
-    line-height: 1.4;
-  }
-
-  .profile-content {
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 60px;
-    align-items: start;
-  }
-
-  .profile-text { display: flex; flex-direction: column; gap: 24px; }
-  .profile-text h2 { font-size: clamp(2rem, 4vw, 3rem); }
-
-  .bio {
-    font-size: 1rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-    white-space: pre-line;
-  }
-
-  .profile-aside {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: sticky;
-    top: 100px;
-  }
-
-  .skills-card {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .skills-title {
-    font-size: 0.68rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-  }
-
-  .skills-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .skill-tag {
-    padding: 6px 14px;
-    background: rgba(34, 211, 238, 0.08);
-    border: 1px solid rgba(34, 211, 238, 0.2);
-    border-radius: 100px;
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    color: var(--accent-cyan);
-  }
-
-  .quote-card {
-    padding: 24px;
-    border-left: 3px solid var(--accent-neon);
-  }
-
-  .quote-label {
-    font-size: 0.65rem;
-    color: var(--text-muted);
-    display: block;
-    margin-bottom: 12px;
-  }
-
-  .quote-text {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 900px) {
-    .info-strip { grid-template-columns: repeat(2, 1fr); }
-    .profile-content { grid-template-columns: 1fr; }
-    .profile-aside { position: static; }
-  }
-
-  @media (max-width: 480px) {
-    .info-strip { grid-template-columns: 1fr; }
-  }
-</style>
+<!-- ──────────────────────── CTA BAND ──────────────────────── -->
+<section class="section section--tight section--panel">
+  <div class="container cta-band reveal">
+    <span class="eyebrow" style="justify-content:center">Continua a esplorare</span>
+    <h2 class="cta-band__title">Il percorso non finisce qui.</h2>
+    <div class="cta-band__row">
+      <a class="btn btn--primary" href="{base}/educazione-civica">Educazione civica <span class="arrow">→</span></a>
+      <a class="btn btn--ghost" href="{base}/">Torna alla home</a>
+    </div>
+  </div>
+</section>

@@ -1,108 +1,52 @@
 <script>
-  export let variant = 'default'; // 'default' | 'hero' | 'dark'
+  // Kept the `variant` prop for API compatibility with existing usage.
+  export let variant = 'hero';
 </script>
 
-<div class="animated-bg variant-{variant}">
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
+<!-- Soft ambient glow -->
+<div class="hero__glow" aria-hidden="true"></div>
 
-  <div class="particles">
-    {#each Array(20) as _, i}
-      <div
-        class="particle"
-        style="
-          left: {Math.random() * 100}%;
-          top: {Math.random() * 100}%;
-          animation-delay: {Math.random() * 6}s;
-          animation-duration: {4 + Math.random() * 8}s;
-          width: {1 + Math.random() * 2}px;
-          height: {1 + Math.random() * 2}px;
-          opacity: {0.2 + Math.random() * 0.5};
-        "
-      ></div>
-    {/each}
-  </div>
+<!-- Signature: telecom network — nodes, links and travelling signal -->
+<svg class="hero__net" viewBox="0 0 520 520" fill="none" aria-hidden="true" data-variant={variant}>
+  <!-- links -->
+  <g class="signal-line">
+    <line x1="90"  y1="120" x2="250" y2="70" />
+    <line x1="250" y1="70"  x2="420" y2="140" />
+    <line x1="90"  y1="120" x2="160" y2="260" />
+    <line x1="250" y1="70"  x2="160" y2="260" />
+    <line x1="250" y1="70"  x2="340" y2="280" />
+    <line x1="420" y1="140" x2="340" y2="280" />
+    <line x1="160" y1="260" x2="340" y2="280" />
+    <line x1="160" y1="260" x2="90"  y2="400" />
+    <line x1="340" y1="280" x2="430" y2="400" />
+    <line x1="90"  y1="400" x2="250" y2="440" />
+    <line x1="340" y1="280" x2="250" y2="440" />
+    <line x1="250" y1="440" x2="430" y2="400" />
+  </g>
 
-  <div class="scanline"></div>
-</div>
+  <!-- rings on hub nodes -->
+  <circle class="signal-ring" cx="250" cy="70"  r="13" />
+  <circle class="signal-ring" cx="340" cy="280" r="13" />
 
-<style>
-  .animated-bg {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    pointer-events: none;
-  }
+  <!-- nodes -->
+  <g class="signal-node">
+    <circle cx="90"  cy="120" r="4.5" />
+    <circle cx="250" cy="70"  r="5.5" />
+    <circle cx="420" cy="140" r="4.5" />
+    <circle cx="160" cy="260" r="4.5" />
+    <circle cx="340" cy="280" r="5.5" />
+    <circle cx="90"  cy="400" r="4.5" />
+    <circle cx="430" cy="400" r="4.5" />
+    <circle cx="250" cy="440" r="4.5" />
+  </g>
 
-  .orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(80px);
-    animation: orbFloat 12s ease-in-out infinite;
-  }
-
-  .orb-1 {
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
-    top: -100px; right: -100px;
-    animation-delay: 0s;
-  }
-
-  .orb-2 {
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.12) 0%, transparent 70%);
-    bottom: -80px; left: -80px;
-    animation-delay: -4s;
-  }
-
-  .orb-3 {
-    width: 300px; height: 300px;
-    background: radial-gradient(circle, rgba(251, 146, 60, 0.08) 0%, transparent 70%);
-    top: 40%; left: 40%;
-    animation-delay: -8s;
-  }
-
-  .variant-hero .orb-1 { opacity: 1.5; width: 700px; height: 700px; }
-  .variant-dark .orb { opacity: 0.5; }
-
-  @keyframes orbFloat {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -20px) scale(1.05); }
-    66% { transform: translate(-20px, 30px) scale(0.95); }
-  }
-
-  .particles {
-    position: absolute;
-    inset: 0;
-  }
-
-  .particle {
-    position: absolute;
-    background: var(--accent-cyan);
-    border-radius: 50%;
-    animation: particleFloat linear infinite;
-    box-shadow: 0 0 4px var(--accent-cyan);
-  }
-
-  @keyframes particleFloat {
-    0% { transform: translateY(0) translateX(0); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(-100vh) translateX(30px); opacity: 0; }
-  }
-
-  .scanline {
-    position: absolute;
-    left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.08), transparent);
-    animation: scanline 8s linear infinite;
-    pointer-events: none;
-  }
-
-  @keyframes scanline {
-    from { top: -2px; }
-    to { top: 100%; }
-  }
-</style>
+  <!-- travelling signals -->
+  <circle r="3.5" class="signal-node">
+    <animateMotion dur="4.6s" repeatCount="indefinite" path="M90,120 L250,70 L420,140 L340,280" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3.5" class="signal-node">
+    <animateMotion dur="5.4s" begin="1.2s" repeatCount="indefinite" path="M160,260 L340,280 L430,400 L250,440" />
+    <animate attributeName="opacity" values="0;1;1;0" dur="5.4s" begin="1.2s" repeatCount="indefinite" />
+  </circle>
+</svg>
