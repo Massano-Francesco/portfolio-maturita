@@ -39,12 +39,6 @@
           in piedi le <strong>reti</strong>, come comunicano i <strong>sistemi</strong>, come
           si progetta qualcosa pensando davvero a chi dovrà usarlo.
         </p>
-        <p>
-          Negli anni ho capito che la parte tecnica è solo metà del lavoro. L'altra metà è
-          il contesto: le persone, gli obiettivi, il <span class="accent">perché</span>. È
-          per questo che, oltre al codice, mi interessano il design, l'imprenditoria e tutto
-          ciò che vive nel punto in cui la tecnologia incontra la vita reale.
-        </p>
       </div>
     </div>
 
@@ -122,23 +116,6 @@
             <span class="tag">Progettazione UI</span>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="editorial reveal">
-      <div class="editorial__label">Oltre la scuola</div>
-      <div class="prose">
-        <p>
-          Fuori dall'aula mi trovi a sperimentare con il <strong>web design</strong>, a
-          seguire progetti imprenditoriali e a coltivare qualche passione meno tecnica —
-          dalle auto al mondo della moda. Curiosità che, in un modo o nell'altro, finiscono
-          sempre per influenzare il modo in cui costruisco.
-        </p>
-        <p>
-          Cosa c'è dopo? Continuare a imparare, possibilmente costruendo. Mi interessa unire
-          competenze tecniche e visione imprenditoriale: questo portfolio non è un punto di
-          arrivo, ma <span class="accent">il punto di partenza</span>.
-        </p>
       </div>
     </div>
   </div>
