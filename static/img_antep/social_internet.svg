@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05030f"/>
+      <stop offset="100%" stop-color="#0f0820"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <!-- Globe -->
+  <circle cx="400" cy="230" r="120" stroke="#8b5cf6" stroke-width="1.5" fill="rgba(139,92,246,0.05)"/>
+  <ellipse cx="400" cy="230" rx="120" ry="40" stroke="#8b5cf6" stroke-width="1" fill="none" opacity="0.4"/>
+  <ellipse cx="400" cy="230" rx="40" ry="120" stroke="#8b5cf6" stroke-width="1" fill="none" opacity="0.4"/>
+  <line x1="280" y1="230" x2="520" y2="230" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+  <!-- Network nodes -->
+  <circle cx="200" cy="120" r="12" fill="#8b5cf6" opacity="0.8"/>
+  <circle cx="600" cy="100" r="10" fill="#e040fb" opacity="0.8"/>
+  <circle cx="650" cy="280" r="14" fill="#a78bfa" opacity="0.8"/>
+  <circle cx="150" cy="320" r="10" fill="#c4b5fd" opacity="0.8"/>
+  <circle cx="500" cy="380" r="8" fill="#8b5cf6" opacity="0.6"/>
+  <!-- Connections -->
+  <line x1="212" y1="128" x2="320" y2="190" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+  <line x1="590" y1="108" x2="480" y2="180" stroke="#e040fb" stroke-width="1" opacity="0.4"/>
+  <line x1="636" y1="275" x2="510" y2="250" stroke="#a78bfa" stroke-width="1" opacity="0.4"/>
+  <line x1="160" y1="310" x2="290" y2="270" stroke="#c4b5fd" stroke-width="1" opacity="0.4"/>
+  <line x1="492" y1="372" x2="430" y2="340" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+  <text x="40" y="55" font-family="Syne, sans-serif" font-size="20" font-weight="800" fill="#f5f0ff">SOCIAL &amp; ETHICAL</text>
+  <text x="40" y="82" font-family="Syne, sans-serif" font-size="20" font-weight="800" fill="#8b5cf6">PROBLEMS OF INTERNET</text>
+  <text x="40" y="420" font-family="JetBrains Mono, monospace" font-size="10" fill="#9080b4" letter-spacing=" 2">DIGITAL DIVIDE � CENSORSHIP � CULTURE</text>
+</svg>

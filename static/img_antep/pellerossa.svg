@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0f2e"/>
+      <stop offset="60%" stop-color="#2d1b4e"/>
+      <stop offset="100%" stop-color="#4a2c20"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="feather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <circle cx="620" cy="110" r="55" fill="url(#sun)" opacity="0.85"/>
+  <path d="M0 320 Q200 280 400 300 T800 290 L800 450 L0 450Z" fill="#1c1008" opacity="0.7"/>
+  <path d="M0 350 Q250 320 500 340 T800 330 L800 450 L0 450Z" fill="#0a0618"/>
+  <!-- Teepee silhouettes -->
+  <path d="M120 350 L160 220 L200 350Z" fill="#2d1b4e" stroke="#8b5cf6" stroke-width="1" opacity="0.8"/>
+  <path d="M240 350 L280 200 L320 350Z" fill="#2d1b4e" stroke="#8b5cf6" stroke-width="1" opacity="0.6"/>
+  <!-- Feather -->
+  <g transform="translate(480, 140) rotate(-15)">
+    <path d="M0 0 Q30 -80 60 0 Q30 80 0 0" fill="url(#feather)" opacity="0.9"/>
+    <line x1="30" y1="-70" x2="30" y2="70" stroke="#e040fb" stroke-width="2"/>
+    <line x1="15" y1="-40" x2="45" y2="-40" stroke="#c4b5fd" stroke-width="1" opacity="0.6"/>
+    <line x1="10" y1="0" x2="50" y2="0" stroke="#c4b5fd" stroke-width="1" opacity="0.6"/>
+    <line x1="15" y1="40" x2="45" y2="40" stroke="#c4b5fd" stroke-width="1" opacity="0.6"/>
+  </g>
+  <text x="40" y="60" font-family="Syne, sans-serif" font-size="28" font-weight="800" fill="#f5f0ff" letter-spacing="4">I PELLEROSSA</text>
+  <text x="40" y="90" font-family="JetBrains Mono, monospace" font-size="11" fill="#9080b4" letter-spacing="3">PRESBITERIANESIMO � STORIA</text>
+  <rect x="40" y="380" width="120" height="2" fill="#8b5cf6" opacity="0.6"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05030f"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg4)"/>
+  <!-- Shield -->
+  <path d="M400 100 L520 150 L520 250 C520 320 400 370 400 370 C400 370 280 320 280 250 L280 150 Z" fill="url(#shield)" opacity="0.15" stroke="#8b5cf6" stroke-width="2"/>
+  <!-- Lock inside shield -->
+  <rect x="365" y="220" width="70" height="55" rx="6" stroke="#c4b5fd" stroke-width="2" fill="rgba(139,92,246,0.1)"/>
+  <path d="M380 220 L380 200 C380 175 420 175 420 200 L420 220" stroke="#c4b5fd" stroke-width="2" fill="none"/>
+  <circle cx="400" cy="245" r="8" fill="#e040fb"/>
+  <!-- Warning triangles -->
+  <path d="M150 300 L170 260 L190 300Z" stroke="#fbbf24" stroke-width="1.5" fill="rgba(251,191,36,0.1)"/>
+  <text x="158" y="292" font-family="Syne, sans-serif" font-size="12" font-weight="800" fill="#fbbf24">!</text>
+  <path d="M610 280 L630 240 L650 280Z" stroke="#fbbf24" stroke-width="1.5" fill="rgba(251,191,36,0.1)"/>
+  <text x="618" y="272" font-family="Syne, sans-serif" font-size="12" font-weight="800" fill="#fbbf24">!</text>
+  <!-- Firewall bars -->
+  <rect x="100" y="140" width="4" height="80" fill="#28c840" opacity="0.5" rx="2"/>
+  <rect x="110" y="155" width="4" height="65" fill="#28c840" opacity="0.4" rx="2"/>
+  <rect x="120" y="130" width="4" height="90" fill="#28c840" opacity="0.6" rx="2"/>
+  <text x="40" y="55" font-family="Syne, sans-serif" font-size="20" font-weight="800" fill="#f5f0ff">ONLINE DANGERS</text>
+  <text x="40" y="82" font-family="Syne, sans-serif" font-size="20" font-weight="800" fill="#8b5cf6">&amp; INTERNET SAFETY</text>
+  <text x="40" y="420" font-family="JetBrains Mono, monospace" font-size="10" fill="#9080b4" letter-spacing="2">MALWARE � WORM � FIREWALL</text>
+</svg>

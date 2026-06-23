@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05030f"/>
+      <stop offset="50%" stop-color="#0a0820"/>
+      <stop offset="100%" stop-color="#120818"/>
+    </linearGradient>
+    <linearGradient id="brain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#e040fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <!-- Brain / circuit -->
+  <path d="M350 120 C300 120 270 160 280 200 C260 220 270 260 300 280 C290 310 320 340 360 330 C380 360 420 360 440 330 C480 340 510 310 500 280 C530 260 540 220 520 200 C530 160 500 120 450 120 C430 100 370 100 350 120Z" stroke="url(#brain)" stroke-width="2" fill="rgba(139,92,246,0.08)"/>
+  <!-- Circuit lines inside -->
+  <circle cx="360" cy="200" r="6" fill="#8b5cf6"/>
+  <circle cx="400" cy="180" r="5" fill="#e040fb"/>
+  <circle cx="440" cy="210" r="6" fill="#a78bfa"/>
+  <circle cx="390" cy="250" r="5" fill="#c4b5fd"/>
+  <circle cx="420" cy="270" r="4" fill="#8b5cf6"/>
+  <line x1="360" y1="200" x2="400" y2="180" stroke="#8b5cf6" stroke-width="1" opacity="0.6"/>
+  <line x1="400" y1="180" x2="440" y2="210" stroke="#e040fb" stroke-width="1" opacity="0.6"/>
+  <line x1="360" y1="200" x2="390" y2="250" stroke="#a78bfa" stroke-width="1" opacity="0.6"/>
+  <line x1="440" y1="210" x2="420" y2="270" stroke="#c4b5fd" stroke-width="1" opacity="0.6"/>
+  <line x1="390" y1="250" x2="420" y2="270" stroke="#8b5cf6" stroke-width="1" opacity="0.6"/>
+  <!-- Plus / minus -->
+  <text x="120" y="240" font-family="Syne, sans-serif" font-size="72" font-weight="800" fill="#28c840" opacity="0.7">+</text>
+  <text x="620" y="240" font-family="Syne, sans-serif" font-size="72" font-weight="800" fill="#ff5f57" opacity="0.7"></text>
+  <text x="40" y="55" font-family="Syne, sans-serif" font-size="22" font-weight="800" fill="#f5f0ff">AI: ADVANTAGES</text>
+  <text x="40" y="82" font-family="Syne, sans-serif" font-size="22" font-weight="800" fill="#e040fb">&amp; DISADVANTAGES</text>
+  <text x="40" y="420" font-family="JetBrains Mono, monospace" font-size="10" fill="#9080b4" letter-spacing="2">OCCUPATION � RELIABILITY � CRITICAL THINKING</text>
+</svg>
